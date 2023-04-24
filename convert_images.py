@@ -1,7 +1,9 @@
-# 设置输入路径
+# Set the input path
+
 input_path = './datasets/images/*.jpg'
 
-# 读取图像并将其转换为NumPy数组
+# Read the image and convert it to the numpy array
+
 for img_path in glob.glob(input_path):
     try:
         img = cv2.imread(img_path)
